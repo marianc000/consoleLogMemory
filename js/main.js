@@ -9,13 +9,13 @@ runBtn.onclick = () => {
   addString();
 }
 
-async function addString(prevMbs=0) {
-  console.log({ prevMbs, a: 'X'.repeat(200 * MB) });
+async function addString(prevMbs=0,i=0) {
+  console.log({ i, prevMbs, a: 'X'.repeat(200 * MB) });
   const memory = await performance.measureUserAgentSpecificMemory();
   const mbs = Math.floor(memory.bytes / MB);
   outputDiv.insertAdjacentHTML('beforeend',
     `<div class='data'><div>${i}</div><div>${mbs}</div></div>`);
 
   //if (i < 40)
-  setTimeout(() => addString(mbs), 1000);
+  setTimeout(() => addString(mbs,++i), 1000);
 }
