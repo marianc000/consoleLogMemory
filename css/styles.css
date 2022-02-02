@@ -1,0 +1,103 @@
+#outputDiv {
+    margin: 1em;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+#runBtn {
+    font-size: 1.2em;
+    margin-left: 0.5em;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin: 0.1em;
+    font-size: 1.5em;
+}
+
+.row>div {
+    display: inline-block;
+    border: 1px solid gainsboro;
+    box-sizing: border-box;
+    width: 5%;
+}
+
+.row {
+    height: 20px;
+    content-visibility: auto;
+}
+
+button.selected {
+    background-color: palegreen;
+}
+
+#startBtn {
+    margin-left: 2em;
+    background-color: orange;
+}
+
+#controls {
+    text-align: center;
+    margin: 0.5em;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+* {
+    font-family: monospace;
+}
+
+caption {
+    font-size: 1.2em;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.5em 0;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+p {
+    font-size: 2em;
+    margin: 0;
+}
+
+td, tr {
+    text-align: center;
+}
+
+th {
+    padding: 0 0.5em;
+}
+
+.data>div {
+    line-height: 2em;
+    padding: 0 0.5em;
+    border-right: 1px solid gainsboro;
+}
+
+.data>div:first-child {
+   border-bottom:1px solid gainsboro;
+}
+
+
+.data {
+    text-align: center;
+    display: inline-block;
+    /* padding-left: 0.5em; */
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+
+.data:first-child {
+    text-align: left;
+}
