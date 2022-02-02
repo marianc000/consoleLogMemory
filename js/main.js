@@ -1,9 +1,5 @@
 const MB = 1_000_000;
 
-function row(i, bytes) {
-  return `<div class='data'><div>${i}</div><div>${Math.floor(bytes / MB)}</div></div>`
-}
-
 runBtn.onclick = () => {
   runBtn.remove();
   addString();
@@ -16,6 +12,5 @@ async function addString(prevMbs=0,i=1) {
   outputDiv.insertAdjacentHTML('beforeend',
     `<div class='data'><div>${i}</div><div>${mbs}</div></div>`);
 
-  //if (i < 40)
   setTimeout(() => addString(mbs,++i), 1000);
 }
