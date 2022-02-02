@@ -1,3 +1,4 @@
-# How much memory is available for a web page?
+# Can console.log() cause memory leaks? How to make a browser crash with console.log()?
+Do you really have to disable console.log() in production?
 
-Sample code for my post https://marian-caikovski.medium.com/how-much-memory-is-available-for-a-web-page-7a52d4f6e3be about available memory limits in a browser. How to use up a browser’s memory so that it crashes?
+Sample code for my post https://marian-caikovski.medium.com/can-console-log-cause-memory-leaks-how-to-make-a-browser-crash-with-console-log-b94e4d248ed8 about the effect of console.log() on the garbage collection
